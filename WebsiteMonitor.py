@@ -182,12 +182,12 @@ def CheckCatalogUpdate():
            # time.sleep(DELAY_TIME)
 
 
-CheckCatalogUpdate()
+#CheckCatalogUpdate()
 
-#schedule.every().day.at("11:45").do(CheckCatalogUpdate)    #refresh 4 times days after 2hrs(7200 seconds)
+schedule.every().day.at("11:45").do(CheckCatalogUpdate)    #refresh 4 times days after 2hrs(7200 seconds)
         
 
 
-#while True:
- #   schedule.run_pending()
-  #  time.sleep(1)
+while True:
+    schedule.run_pending()
+    time.sleep(1)
